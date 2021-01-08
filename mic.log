@@ -359,3 +359,21 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'github_repo_url', 'value': 'https://github.com/dhardestylewis/swatplus_test_001.git'}}
+mic   github.py          INFO     Creating a new version
+mic   github.py          DEBUG    New version: 21.1.2
+mic   github.py          INFO     Pushing changes to the server
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'version', 'value': '21.1.2'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'mint_component_url', 'value': 'https://raw.githubusercontent.com/dhardestylewis/swatplus_test_001/master/mint_component.zip'}}
+mic   github.py          INFO     Push complete: {'repository': 'https://github.com/dhardestylewis/swatplus_test_001.git', 'version': '21.1.2'}
+mic   docker.py          INFO     Publish docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'dhardestylewis/swatplus_test_001:21.1.2'}}
+mic   commands.py        ERROR    Upload failed: list index out of range
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/mic/click_encapsulate/commands.py", line 691, in upload
+    api_response_model, api_response_mc, model_id, software_version_id = publish_model_configuration(
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/model_catalog.py", line 104, in publish_model_configuration
+    api_response, model_id, software_version_id = handle_existing_model(profile, api_response_mc, labels, model_cli)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/model_catalog.py", line 121, in handle_existing_model
+    selected_model = models[choice - 1]
+IndexError: list index out of range
