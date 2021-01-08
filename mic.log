@@ -331,3 +331,8 @@ Traceback (most recent call last):
   File "/opt/conda/lib/python3.8/site-packages/mic/publisher/github.py", line 163, in git_pull
     remote_master_id = repo.lookup_reference('refs/remotes/origin/%s' % (branch)).target
 KeyError: 'refs/remotes/origin/master'
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
