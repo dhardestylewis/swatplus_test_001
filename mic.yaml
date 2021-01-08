@@ -1,0 +1,256 @@
+step: 2
+name: swatplus_test_001
+docker_image: swatplus_test_001:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - general
+  - mintproject/generic:latest
+container_name: swatplus_test_001_ec16d133
+configs:
+  file_cio:
+    path: file.cio
+    format: cio
+inputs:
+  snow_sno:
+    path: snow.sno
+    format: sno
+  chem_app_ops:
+    path: chem_app.ops
+    format: ops
+  cntable_lum:
+    path: cntable.lum
+    format: lum
+  rout_unit_def:
+    path: rout_unit.def
+    format: def
+  hru_data_hru:
+    path: hru-data.hru
+    format: hru
+  plants_plt:
+    path: plants.plt
+    format: plt
+  aqu_unit_ele:
+    path: aqu_unit.ele
+    format: ele
+  channel_cha:
+    path: channel.cha
+    format: cha
+  urban_urb:
+    path: urban.urb
+    format: urb
+  hydrology_cha:
+    path: hydrology.cha
+    format: cha
+  soil_plant_ini:
+    path: soil_plant.ini
+    format: ini
+  weather_sta_cli:
+    path: weather-sta.cli
+    format: cli
+  graze_ops:
+    path: graze.ops
+    format: ops
+  ovn_table_lum:
+    path: ovn_table.lum
+    format: lum
+  septic_str:
+    path: septic.str
+    format: str
+  sediment_cha:
+    path: sediment.cha
+    format: cha
+  flo_con_dtl:
+    path: flo_con.dtl
+    format: dtl
+  chan_surf_lin:
+    path: chan-surf.lin
+    format: lin
+  management_sch:
+    path: management.sch
+    format: sch
+  rout_unit_ele:
+    path: rout_unit.ele
+    format: ele
+  object_cnt:
+    path: object.cnt
+    format: cnt
+  aqu_cha_lin:
+    path: aqu_cha.lin
+    format: lin
+  ccw01_tmp:
+    path: ccw01.tmp
+    format: tmp
+  nutrients_cha:
+    path: nutrients.cha
+    format: cha
+  codes_bsn:
+    path: codes.bsn
+    format: bsn
+  field_fld:
+    path: field.fld
+    format: fld
+  aquifer_con:
+    path: aquifer.con
+    format: con
+  pathogens_pth:
+    path: pathogens.pth
+    format: pth
+  soils_sol:
+    path: soils.sol
+    format: sol
+  parameters_bsn:
+    path: parameters.bsn
+    format: bsn
+  weather_wgn_cli:
+    path: weather-wgn.cli
+    format: cli
+  ccw01_pcp:
+    path: ccw01.pcp
+    format: pcp
+  channel_lte_cha:
+    path: channel-lte.cha
+    format: cha
+  pcp_cli:
+    path: pcp.cli
+    format: cli
+  print_prt:
+    path: print.prt
+    format: prt
+  cons_practice_lum:
+    path: cons_practice.lum
+    format: lum
+  septic_sep:
+    path: septic.sep
+    format: sep
+  rout_unit_con:
+    path: rout_unit.con
+    format: con
+  om_water_ini:
+    path: om_water.ini
+    format: ini
+  topography_hyd:
+    path: topography.hyd
+    format: hyd
+  rout_unit_rtu:
+    path: rout_unit.rtu
+    format: rtu
+  hru_con:
+    path: hru.con
+    format: con
+  chandeg_con:
+    path: chandeg.con
+    format: con
+  aquifer_aqu:
+    path: aquifer.aqu
+    format: aqu
+  sweep_ops:
+    path: sweep.ops
+    format: ops
+  initial_cha:
+    path: initial.cha
+    format: cha
+  plant_ini:
+    path: plant.ini
+    format: ini
+  time_sim:
+    path: time.sim
+    format: sim
+  hyd_sed_lte_cha:
+    path: hyd-sed-lte.cha
+    format: cha
+  fertilizer_frt:
+    path: fertilizer.frt
+    format: frt
+  tmp_cli:
+    path: tmp.cli
+    format: cli
+  harv_ops:
+    path: harv.ops
+    format: ops
+  res_rel_dtl:
+    path: res_rel.dtl
+    format: dtl
+  lum_dtl:
+    path: lum.dtl
+    format: dtl
+  pesticide_pst:
+    path: pesticide.pst
+    format: pst
+  ls_unit_ele:
+    path: ls_unit.ele
+    format: ele
+  tillage_til:
+    path: tillage.til
+    format: til
+  hydrology_hyd:
+    path: hydrology.hyd
+    format: hyd
+  object_prt:
+    path: object.prt
+    format: prt
+  nutrients_sol:
+    path: nutrients.sol
+    format: sol
+  initial_aqu:
+    path: initial.aqu
+    format: aqu
+  ls_unit_def:
+    path: ls_unit.def
+    format: def
+  landuse_lum:
+    path: landuse.lum
+    format: lum
+  scen_lu_dtl:
+    path: scen_lu.dtl
+    format: dtl
+code_files: {}
+outputs:
+  files_out_out:
+    path: files_out.out
+    format: out
+  diagnostics_out:
+    path: diagnostics.out
+    format: out
+  basin_crop_yld_aa_txt:
+    path: basin_crop_yld_aa.txt
+    format: txt
+  channel_sd_yr_txt:
+    path: channel_sd_yr.txt
+    format: txt
+  basin_wb_aa_txt:
+    path: basin_wb_aa.txt
+    format: txt
+  hru_wb_aa_txt:
+    path: hru_wb_aa.txt
+    format: txt
+  basin_crop_yld_yr_txt:
+    path: basin_crop_yld_yr.txt
+    format: txt
+  basin_aqu_aa_txt:
+    path: basin_aqu_aa.txt
+    format: txt
+  outlet_out:
+    path: outlet.out
+    format: out
+  hru_pw_aa_txt:
+    path: hru_pw_aa.txt
+    format: txt
+  success_fin:
+    path: success.fin
+    format: fin
+  hru_wb_day_txt:
+    path: hru_wb_day.txt
+    format: txt
+  basin_pw_yr_txt:
+    path: basin_pw_yr.txt
+    format: txt
+  basin_wb_yr_txt:
+    path: basin_wb_yr.txt
+    format: txt
+  channel_sdmorph_yr_txt:
+    path: channel_sdmorph_yr.txt
+    format: txt
+  crop_yld_aa_txt:
+    path: crop_yld_aa.txt
+    format: txt
+github_repo_url: https://github.com/dhardestylewis/swatplus_test_001.git
