@@ -377,3 +377,8 @@ Traceback (most recent call last):
   File "/opt/conda/lib/python3.8/site-packages/mic/publisher/model_catalog.py", line 121, in handle_existing_model
     selected_model = models[choice - 1]
 IndexError: list index out of range
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
