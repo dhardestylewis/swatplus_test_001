@@ -1,0 +1,306 @@
+    1  ls
+    2  mic pkg trace swatplus_exe
+    3  pip install mic reprozip
+    4  mic pkg trace swatplus_exe
+    5  screen -ls
+    6  ls
+    7  mic pkg configs file.cio
+    8  mic pkg inputs
+    9  mic pkg outputs
+   10  cp mic/ mic.orig
+   11  cp -R mic/ mic.orig
+   12  vim mic/mic.yaml 
+   13  apt install vim
+   14  vim mic/mic.yaml 
+   15  apt update
+   16  apt install vim
+   17  ls
+   18  vim mic/mic.yaml 
+   19  ls
+   20  mic pkg wrapper
+   21  mic pkg run
+   22  ls /tmp/mint/executions
+   23  ls /tmp/mint/
+   24  cd mic
+   25  ls
+   26  cd ..
+   27  ls
+   28  ls -la
+   29  cd m
+   30  cd mic
+   31  ls
+   32  cd executions/
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd src/
+   37  ls
+   38  cp io.sh io.orig.sh
+   39  cp run run.orig
+   40  vim -R output.sh 
+   41  ls
+   42  vim -R file.cio 
+   43  ls
+   44  vim io.sh 
+   45  ls
+   46  vim run
+   47  ls
+   48  vim run
+   49  ls
+   50  vim io.sh 
+   51  ls
+   52  cd ..
+   53  ls
+   54  vim mic.yaml 
+   55  ls
+   56  cd docker/
+   57  ls
+   58  vim -R entrypoint.sh 
+   59  ls
+   60  vim -R Dockerfile 
+   61  ls
+   62  cd bin/
+   63  ls
+   64  cd ..
+   65  ls
+   66  cd ..
+   67  ls
+   68  cd data/
+   69  ls
+   70  cd ..
+   71  ls
+   72  cd ..
+   73  ls
+   74  mic pkg run
+   75  ls
+   76  cd mic
+   77  ls
+   78  cd src/
+   79  ls
+   80  vim io.sh 
+   81  cd ..
+   82  mic pkg run
+   83  envsubst
+   84  apt install gettext
+   85  mic pkg run
+   86  ls
+   87  mic pkg upload
+   88  mic credentials
+   89  mic pkg upload
+   90  git remote remove origin
+   91  mic pkg upload
+   92  ls
+   93  ls -la
+   94  ls
+   95  cd mic
+   96  ls
+   97  cd docker/
+   98  ls
+   99  cd bin/
+  100  ls
+  101  cd .
+  102  cd ..
+  103  s
+  104  ls
+  105  d ..
+  106  s
+  107  ls
+  108  ls -la
+  109  cd ..
+  110  ls
+  111  ls -la
+  112  cd .git/
+  113  ls
+  114  cd ..
+  115  ls
+  116  cd .git/
+  117  ls
+  118  git remote remove origin
+  119  cd ..
+  120  ls
+  121  cd .
+  122  ls
+  123  cd ..
+  124  s
+  125  ls
+  126  mic pkg upload
+  127  bg
+  128  ls
+  129  cd mic
+  130  ls
+  131  cd .git/
+  132  ls
+  133  cd ..
+  134  ls
+  135  du -sh .git
+  136  watch -n.1 du -sh .git
+  137  ls
+  138  du -sh *
+  139  watch -n.1 du -sh *
+  140  ls
+  141  less mic.log
+  142  watch tail -n50 mic.log
+  143  watch tail -n50 mic.loqqqg
+  144  ls
+  145  less mic.oog
+  146  less mic.log
+  147  vim -R /opt/conda/lib/python3.8/site-packages/mic/publisher/github.py
+  148  cd /opt/conda/lib/python3.8/site-packages/mic/publisher
+  149  ls
+  150  grep lookup *
+  151  vim github.py 
+  152  cd $OLDPWD
+  153  ls
+  154  vim -R mic.log 
+  155  ls
+  156  cd .git/
+  157  git branch
+  158  git remote
+  159  ls
+  160  ls reg
+  161  ls refs
+  162  git remote
+  163  git remote -v
+  164  git-show-ref
+  165  apt install git-show-ref
+  166  git show-ref
+  167  ls
+  168  cd ..
+  169  ls
+  170  git init
+  171  git add .
+  172  git commit -m "first commit"
+  173  git config --global user.email "dhl@tacc.utexas.edu"
+  174  git config --global user.name "Daniel Hardesty Lewis"
+  175  ls
+  176  git commit -m "first commit"
+  177  git remote add origin git remote add origin https://github.com/dhardestylewis/swatplus_test_001.git
+  178  git remote add origin https://github.com/dhardestylewis/swatplus_test_001.git
+  179  git push -u origin master
+  180  ls
+  181  cd ..
+  182  ls
+  183  git pkg upload
+  184  mic pkg upload
+  185  cd mic
+  186  cd .git/
+  187  ls *
+  188  cd refs/
+  189  ls
+  190  ls *
+  191  mic -v
+  192  mic --version
+  193  mic --help
+  194  mic -v
+  195  mic version
+  196  git remote -v
+  197  git ls-remote
+  198  git fetch origin
+  199  ls 
+  200  git fetch origin master:refs/remotes/origin/master
+  201  git prune
+  202  ls
+  203  git ls-remote
+  204  git pull origin master
+  205  cd ..
+  206  ls
+  207  cd ..
+  208  ls
+  209  git pull origin mater
+  210  git pull origin master
+  211  git push -u origin master
+  212  ls
+  213  apt install git-lfs
+  214  find . -type f -size 100M
+  215  find . -type f -size +100M
+  216  git lfs track ./executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  217  git add ./executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  218  git commit -m "add hru_wb_day_txt.txt"
+  219  git push
+  220  git push --set-upstream origin master
+  221  bg
+  222  ls
+  223  find . -type f -size +100M
+  224  ls -la ./executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  225  du -sh ./executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  226  fg
+  227  git reset --soft HEAD^
+  228  git reset HEAD executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  229  git commit -m ORIG_HEAD
+  230  git push origin master -f
+  231  git add -u
+  232  git reset HEAD executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  233  git commit
+  234  git push -u origin master
+  235  git reset --hard HEAD^
+  236  git add -u
+  237  git reset -- executions/01_07_22_42_28/src/hru_wb_day_txt.txt
+  238  git commit
+  239  git push -u origin master
+  240  rm -Rf .git
+  241  ls
+  242  mic pkg upload
+  243  python3 mic pkg upload
+  244  which mic
+  245  less $(which mic)
+  246  python3 -m pdb $(which mic)
+  247  python3 -m pdb $(which mic) pkg upload
+  248  ls
+  249  vim -R traceback-history.py 
+  250  ls
+  251  rm -Rf traceback-history.py 
+  252  ls
+  253  python3 -m pdb $(which mic) pkg upload
+  254  vim -R /opt/conda/lib/python3.8/site-packages/mic/publisher/github.py
+  255  cd /opt/conda/lib/python3.8/site-packages/mic/publisher/
+  256  ls
+  257  grep bits *
+  258  cd ..
+  259  ls
+  260  grep -R bits *
+  261  grep -r bits *
+  262  ls
+  263  cd ..
+  264  ls
+  265  cd mic
+  266  ls
+  267  cd /tmp/mint/
+  268  ls
+  269  python3 -m pdb $(which mic) pkg upload
+  270  ls
+  271  python3
+  272  ls
+  273  git references
+  274  git reference
+  275  git ref
+  276  git remote add origin
+  277  cd mic
+  278  git remote add origin https://github.com/dhardestylewis/swatplus_test_001.git
+  279  git push -u origin master
+  280  mv executions/01_07_22_42_28/src/hru_wb_day_txt.txt ../../
+  281  ls
+  282  git remotes
+  283  git remote
+  284  rm .git
+  285  rm -Rf .git
+  286  git init
+  287  git add .
+  288  git commit -m 'initial'
+  289  git remote add origin https://github.com/dhardestylewis/swatplus_test_001.git
+  290  git push -u origin master
+  291  mic pkg upload
+  292  fg
+  293  ls
+  294  mic pkg upload
+  295  dame run 7f924ecb-f614-4440-bfdd-b6c6396af442 -p default
+  296  ls
+  297  vim swatplus_test_001-id-mint.txt
+  298  ls
+  299  vim swatplus_test_001-id-mint.txt 
+  300  ls
+  301  mic pkg upload
+  302  ls unix:///var/run/docker.sock
+  303  lsc
+  304  history | less
+  305  ls
+  306  history > swatplus_test_001-history.sh.txt

@@ -1,11 +1,11 @@
-step: 2
+step: 1
 name: swatplus_test_001
-docker_image: dhardestylewis/swatplus_test_001:21.1.5
+docker_image: swatplus_test_001:latest
 framework: !!python/object/apply:mic.constants.Framework
 - !!python/tuple
   - general
   - mintproject/generic:latest
-container_name: swatplus_test_001_ec16d133
+container_name: swatplus_test_001_33cdb048
 configs:
   file_cio:
     path: file.cio
@@ -254,5 +254,5 @@ outputs:
     path: crop_yld_aa.txt
     format: txt
 github_repo_url: https://github.com/dhardestylewis/swatplus_test_001.git
-version: 21.1.5
+version: 21.1.6
 mint_component_url: https://raw.githubusercontent.com/dhardestylewis/swatplus_test_001/master/mint_component.zip

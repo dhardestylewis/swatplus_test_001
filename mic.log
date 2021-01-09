@@ -427,3 +427,52 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'github_repo_url', 'value': 'https://github.com/dhardestylewis/swatplus_test_001.git'}}
+mic   github.py          INFO     Creating a new version
+mic   github.py          DEBUG    New version: 21.1.6
+mic   github.py          INFO     Pushing changes to the server
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'version', 'value': '21.1.6'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'mint_component_url', 'value': 'https://raw.githubusercontent.com/dhardestylewis/swatplus_test_001/master/mint_component.zip'}}
+mic   github.py          INFO     Push complete: {'repository': 'https://github.com/dhardestylewis/swatplus_test_001.git', 'version': '21.1.6'}
+mic   docker.py          INFO     Publish docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/tmp/mint/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'dhardestylewis/swatplus_test_001:21.1.6'}}
+mic   commands.py        ERROR    Upload failed: 
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/click/termui.py", line 129, in prompt_func
+    return f("")
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/mic/click_encapsulate/commands.py", line 691, in upload
+    api_response_model, api_response_mc, model_id, software_version_id = publish_model_configuration(
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/model_catalog.py", line 104, in publish_model_configuration
+    api_response, model_id, software_version_id = handle_existing_model(profile, api_response_mc, labels, model_cli)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/model_catalog.py", line 115, in handle_existing_model
+    choice = click.prompt("Please select the model to use",
+  File "/opt/conda/lib/python3.8/site-packages/click/termui.py", line 147, in prompt
+    value = prompt_func(prompt)
+  File "/opt/conda/lib/python3.8/site-packages/click/termui.py", line 136, in prompt_func
+    raise Abort()
+click.exceptions.Abort
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu/mic
+mic   initialization.py  INFO     User aborted initialization
+mic   initialization.py  INFO     When creating base dir found base directory already exists: /Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu.orig/mic
+mic   initialization.py  INFO     MIC has initialized the component
+mic   _utils.py          INFO     Log file created
+mic   _utils.py          INFO     OS: {'name': 'Linux', 'data': {'version': '#1 SMP Fri May 8 23:03:06 UTC 2020', 'release': '5.4.39-linuxkit', 'platform': 'Linux-5.4.39-linuxkit-x86_64-with-glibc2.10'}}
+mic   _utils.py          INFO     MIC Version: 1.3.7
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'start', 'command_parameters': {'name': {'value': 'swatplus_test_001', 'type': 'str'}, 'image': {'value': 'dhardestylewis/swatplus_docker:develop', 'type': 'str'}}}
+mic   initialization.py  DEBUG    OS name: linux
+mic   docker.py          INFO     Downloading and building base docker image
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu.orig/mic/mic.yaml', 'data': {'key': 'name', 'value': 'swatplus_test_001'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu.orig/mic/mic.yaml', 'data': {'key': 'docker_image', 'value': 'swatplus_test_001:latest'}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu.orig/mic/mic.yaml', 'data': {'key': 'framework', 'value': <Framework.GENERIC: ('general', 'mintproject/generic:latest')>}}
+mic   config_yaml.py     DEBUG    Writing to spec: {'file': '/Users/taccstaff/SWAT/swatplus_cwl/swatplus_predocker/data/TxtInOut_CoonCreek_aqu.orig/mic/mic.yaml', 'data': {'key': 'container_name', 'value': 'swatplus_test_001_33cdb048'}}
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
